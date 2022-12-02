@@ -1,0 +1,30 @@
+<section class="lista-container">
+  <h1>Contatos salvos</h1>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Sobrenome</th>
+          <th>Email</th>
+          <th>Telefone</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each pessoas}}
+          <tr>
+            <td>{{this.nome}}</td>
+            <td>{{this.sobrenome}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.telefone}}</td>
+            <td>
+              <a href="/pessoas/edit/{{this.id}}" class="edit">Editar</a>
+              <a href="/pessoas/delete/{{this.id}}" class="delete">Deletar</a>
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</section>

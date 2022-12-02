@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+input {
+  all: unset;
+}
+
+.header-container {
+  background-color: azure;
+  width: 100%;
+  padding: 20px 40px;
+}
+
+.header-menu ul {
+  display: flex;
+  gap: 20px;
+}
+
+.header-menu li a {
+  padding: 10px 5px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+/*Form*/
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container h1 {
+  margin-top: 40px;
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+}
+
+.form {
+  margin-top: 40px;
+}
+
+.form-field label {
+  display: block;
+  padding-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.form-field input {
+  width: 500px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  border: 1px solid #bebebe;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #222222;
+}
+
+.form-field input:focus {
+  outline: none;
+  background-color: transparent;
+  border: 2px solid #5a7bf3;
+}
+
+.form-button {
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 25px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: #032bbb;
+  border-radius: 4px;
+  border: none;
+}
+
+.form-button:hover {
+  transition: ease-in 0.2s;
+  background-color: #0c2375;
+}
+
+/*lISTA*/
+
+.lista-container h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 32px;
+}
+
+.table-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: auto;
+}
+
+table {
+  margin-top: 40px;
+  border-collapse: collapse;
+  width: 900px;
+}
+
+th {
+  background-color: rgb(236, 236, 236);
+}
+
+th,
+td {
+  border: 1px solid #f5f5f5;
+  padding: 15px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(236, 236, 236);
+}
+
+.edit,
+.delete {
+  padding: 5px 10px;
+  color: #fff;
+}
+
+.edit {
+  background-color: #032bbb;
+}
+
+.delete {
+  background-color: #bb0303;
+}

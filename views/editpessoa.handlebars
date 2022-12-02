@@ -1,0 +1,33 @@
+<section class="form-container">
+  <h1>Agenda do Brunão</h1>
+  <form action="/pessoas/updatepessoa" method="post" class="form">
+    <input type="hidden" name="id" value="{{pessoa.id}}" />
+    <div class="form-field">
+      <label for="name">Nome</label>
+      <input type="text" name="name" value="{{pessoa.nome}}" />
+    </div>
+    <div class="form-field">
+      <label for="lastName">Sobrenome</label>
+      <input
+        type="text"
+        name="lastName"
+        value="{{pessoa.sobrenome}}"
+        required
+      />
+    </div>
+    <div class="form-field">
+      <label for="email">E-mail</label>
+      <input type="email" name="email" value="{{pessoa.email}}" required />
+    </div>
+    <div class="form-field">
+      <label for="telephone">Telefone</label>
+      <input
+        type="text"
+        name="telephone"
+        value="{{pessoa.telefone}}"
+        required
+      />
+    </div>
+    <input type="submit" class="form-button" value="Editar" />
+  </form>
+</section>
